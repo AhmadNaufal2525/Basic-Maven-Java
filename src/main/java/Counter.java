@@ -24,4 +24,8 @@ public class Counter {
 		return count;
 	}
 
+	public void setCount(int value) {
+		count = value;
+	}
+	
 }
