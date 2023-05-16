@@ -9,15 +9,18 @@ public class Driver {
 		counter.setCount(10);
 		System.out.println(counter.getCount());
 		
-		System.out.println("Count:" + counter.getCount());
+		System.out.println("Initial Count:" + counter.getCount());
 		
 		counter.increment();
 		
-		System.out.println("Count:" + counter.getCount());
+		System.out.println("Increment Count:" + counter.getCount());
 		
 		counter.decrement();
 		
-		System.out.println("Count:" + counter.getCount());
+		System.out.println("Decrement Count:" + counter.getCount());
+
+		counter.multiplyCount(5);
+        System.out.println("Count: " + counter.getCount());
 		
 	}
 
