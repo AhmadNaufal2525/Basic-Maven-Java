@@ -27,5 +27,9 @@ public class Counter {
 	public void setCount(int value) {
 		count = value;
 	}
+
+	public void multiplyCount(int factor) {
+    	count *= factor;
+	}
 	
 }
