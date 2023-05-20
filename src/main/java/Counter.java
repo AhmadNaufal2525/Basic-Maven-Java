@@ -48,5 +48,12 @@ public class Counter {
 	public int getCount() {
 		return count;
 	}
+	public void isDecrement() {
+		decrement();
+	}
+	
+	public void countMultiplecalc() {
+		count = count * 2;
+	}
 	
 }

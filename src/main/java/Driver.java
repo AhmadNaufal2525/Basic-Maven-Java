@@ -16,6 +16,17 @@ public class Driver {
 		
 		System.out.println("Decrement Count:" + counter.getCount());
 		
+		counter.multiplyBy(8);
+		
+		System.out.println("Multiply Count:" + counter.getCount());
+
+		counter.multiplyBy(2);
+		
+		System.out.println("Multiply Count:" + counter.getCount());
+
+		counter.multiplyBy(4);
+		
+		System.out.println("Multiply Count:" + counter.getCount());
 	}
 
 }
