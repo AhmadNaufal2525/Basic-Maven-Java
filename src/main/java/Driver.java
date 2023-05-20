@@ -15,10 +15,7 @@ public class Driver {
 		counter.decrement();
 		
 		System.out.println("Decrement Count:" + counter.getCount());
-
-		counter.multiplyBy(8);
 		
-		System.out.println("Multiply Count:" + counter.getCount());
 	}
 
 }
