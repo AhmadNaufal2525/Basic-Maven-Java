@@ -16,6 +16,8 @@ public class Driver {
 		
 		System.out.println("Decrement Count:" + counter.getCount());
 		
+		int x;
+		System.out.println("Value of x: " + x);
 	}
 
 }

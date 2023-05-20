@@ -3,6 +3,7 @@ package src.main.java;
 public class Counter {
 
 	private int count;
+	private static final int MAX_COUNT = 100;
 	
 	public Counter() {
 		this.reset();
@@ -49,4 +50,9 @@ public class Counter {
 		return count;
 	}
 	
+	public void maxCount() {
+		if (count < MAX_COUNT) {
+			count = MAX_COUNT + 1;
+		}
+	}
 }
