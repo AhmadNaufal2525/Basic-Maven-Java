@@ -4,15 +4,15 @@
   <artifactId>contohproject</artifactId>
   <version>0.3.5</version>
 
-<dependencies>
-  <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.11</version> <!-- Or whatever JUnit you're using. -->
-	</dependency>
-</dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version> <!-- Or whatever JUnit version you're using. -->
+    </dependency>
+  </dependencies>
 
-<distributionManagement>
+  <distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
@@ -21,9 +21,21 @@
   </distributionManagement>
   
   <properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
- </properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.1.2184</version>
+        <configuration>
+          <sonar.analysis.mode>publish</sonar.analysis.mode>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   
 </project>
-
