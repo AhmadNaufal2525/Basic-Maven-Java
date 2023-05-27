@@ -24,18 +24,5 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.9.1.2184</version>
-        <configuration>
-          <sonar.analysis.mode>publish</sonar.analysis.mode>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
   
 </project>
